@@ -1,8 +1,8 @@
-package com.cydeo.step_definitions;
+package com.alpi.step_definitions;
 
-import com.cydeo.pages.WebTableLoginPage;
-import com.cydeo.utilities.ConfigurationReader;
-import com.cydeo.utilities.Driver;
+import com.alpi.pages.WebTableLoginPage;
+import com.alpi.utilities.ConfigurationReader;
+import com.alpi.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

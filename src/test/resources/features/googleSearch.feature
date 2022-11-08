@@ -1,3 +1,4 @@
+@wip
 Feature: Google search functionality
   User story: As a user, when I am on the google search page
     I should be able to search whatever I want and see relevant information
@@ -14,4 +15,3 @@ Scenario: Search functionality result title verification
     When user types "tesla" in the google search box and clicks enter
     Then user sees "tesla - Google Search" is in the google title
 
-          COME BACK AT 11:35 EST

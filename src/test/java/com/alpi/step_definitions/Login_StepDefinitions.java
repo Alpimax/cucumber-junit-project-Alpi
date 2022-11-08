@@ -1,4 +1,4 @@
-package com.cydeo.step_definitions;
+package com.alpi.step_definitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;

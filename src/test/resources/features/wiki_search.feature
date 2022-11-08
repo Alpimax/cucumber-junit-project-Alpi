@@ -1,3 +1,4 @@
+@scenarioOutlinePractice
 Feature: Wikipedia Search Functionality and verifications
 
   Background:
@@ -15,8 +16,9 @@ Feature: Wikipedia Search Functionality and verifications
     When User types "Steve Jobs" in the wiki search box
     And User clicks wiki search button
     Then User sees "Steve Jobs" is in the wiki title
+    Then quit
 
-  @scenarioOutlinePractice
+
   Scenario Outline: Wikipedia Search Functionality Title Verification with using DDT
      #Given User is on Wikipedia home page
     When User types "<searchValue>" in the wiki search box

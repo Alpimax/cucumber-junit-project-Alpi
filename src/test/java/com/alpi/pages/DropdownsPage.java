@@ -1,17 +1,17 @@
-package com.cydeo.pages;
+package com.alpi.pages;
 
-import com.cydeo.utilities.Driver;
+import com.alpi.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class DropdownsPage {
 
-    public DropdownsPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public DropdownsPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(id="month")
+    @FindBy(id = "month")
     public WebElement monthDropdown;
 
 }

@@ -1,18 +1,17 @@
-package com.cydeo.step_definitions;
+package com.alpi.step_definitions;
 
-import com.cydeo.pages.BasePage;
-import com.cydeo.pages.ViewAllOrdersPage;
-import com.cydeo.pages.WebTableLoginPage;
-import com.cydeo.pages.WebTableOrderPage;
-import com.cydeo.utilities.BrowserUtils;
-import com.cydeo.utilities.ConfigurationReader;
-import com.cydeo.utilities.Driver;
+import com.alpi.pages.BasePage;
+import com.alpi.pages.ViewAllOrdersPage;
+import com.alpi.pages.WebTableLoginPage;
+import com.alpi.pages.WebTableOrderPage;
+import com.alpi.utilities.BrowserUtils;
+import com.alpi.utilities.ConfigurationReader;
+import com.alpi.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 public class WebTableOrder_StepDefs {
@@ -29,12 +28,14 @@ public class WebTableOrder_StepDefs {
 
         Driver.getDriver().get(ConfigurationReader.getProperty("env"));
         webTableLoginPage.login(ConfigurationReader.getProperty("username"),ConfigurationReader.getProperty("password"));
-        basePage.orderButtonNavItem.click();
+
 
     }
 
     @When("user selects product type {string}")
     public void user_selects_product_type(String string) {
+
+        basePage.orderButtonNavItem.click();
 
         select = new Select(webTableOrderPage.productTypeDropdown);
         select.selectByVisibleText(string);
